@@ -1,0 +1,5 @@
+package files;
+
+public class Payload {
+
+}//End of Payload Class
