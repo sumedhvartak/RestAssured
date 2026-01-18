@@ -1,9 +1,0 @@
-package files;
-
-public class Payload {
-	public static String getData() {
-		return "";
-		
-	}//End of getData()
-
-}//End of Payload Class
