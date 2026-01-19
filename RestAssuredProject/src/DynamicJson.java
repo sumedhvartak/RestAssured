@@ -34,8 +34,5 @@ public class DynamicJson {
 			
 	}//End of BookData
 		
-		
-		
-
 
 }//End of DynamicJson
