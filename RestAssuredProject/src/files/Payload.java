@@ -48,5 +48,15 @@ public class Payload {
 				+ "}";
 	}//End of coursesData()
 	
+	public static String createBugJira() {
+		return "{\r\n"
+				+ "    \"fields\": {\r\n"
+				+ "      \"project\": { \"key\": \"KAN\" },\r\n"
+				+ "      \"summary\": \"Image not loading\",\r\n"
+				+ "      \"issuetype\": { \"name\": \"Bug\" }\r\n"
+				+ "    }\r\n"
+				+ "  }";
+	}
+	
 
 }//End of Payload Class
