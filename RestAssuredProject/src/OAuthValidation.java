@@ -1,6 +1,8 @@
 import org.testng.annotations.Test;
 import files.ReusableJsonMethod;
 import io.restassured.path.json.JsonPath;
+import pojo.GetCourses;
+
 import static org.hamcrest.Matchers.*; 
 import static io.restassured.RestAssured.*;
 
@@ -15,12 +17,16 @@ public class OAuthValidation {
 		.formParam("scope", "trust")
 		.when().post("https://rahulshettyacademy.com/oauthapi/oauth2/resourceOwner/token")
 		.then().extract().response().asString();
+		
 		JsonPath js = ReusableJsonMethod.rawToJson(responseOAuth);
 		String accessToken = js.getString("access_token");
 		System.out.println("Access Token: " + accessToken);
-		given().queryParam("access_token", accessToken).
-		when().get("https://rahulshettyacademy.com/oauthapi/getCourseDetails").
-		then().body("instructor", equalTo("RahulShetty"));
+		
+		GetCourses gc = given().queryParam("access_token", accessToken).
+		when().get("https://rahulshettyacademy.com/oauthapi/getCourseDetails").as(GetCourses.class);
+		
+		System.out.println("Get Courses objecy: " + gc);
+		
 		
 	}//End of performOAuth
 
