@@ -3,7 +3,6 @@ import files.ReusableJsonMethod;
 import io.restassured.path.json.JsonPath;
 import pojo.GetCourses;
 
-import static org.hamcrest.Matchers.*; 
 import static io.restassured.RestAssured.*;
 
 public class OAuthValidation {
