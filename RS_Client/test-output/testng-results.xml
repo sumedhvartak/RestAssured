@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-29T12:57:36 IST" name="Default suite" finished-at="2026-01-29T12:57:39 IST" duration-ms="3031">
+    <groups>
+    </groups>
+    <test started-at="2026-01-29T12:57:36 IST" name="Default test" finished-at="2026-01-29T12:57:39 IST" duration-ms="3031">
+      <class name="RSClient">
+        <test-method signature="login()[pri:0, instance:RSClient@48aca48b]" started-at="2026-01-29T12:57:36 IST" name="login" finished-at="2026-01-29T12:57:39 IST" duration-ms="2978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- RSClient -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
